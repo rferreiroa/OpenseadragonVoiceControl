@@ -1,0 +1,1 @@
+# Openseadragon-Speech-text-and-voice-recognition-plug-in
