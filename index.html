@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenSeadragon Speech Text and Voice Control Recognition</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src='openseadragon/openseadragon.js'></script>
+
+    <script type="text/javascript" src='Openseadragon-speechtextrecognition/openseadragonSpeechtextRecognition.js'></script>
+
+    <script type="text/javascript" src='Openseadragon-speechtextrecognition/annyang.js'></script>
+    <script type="text/javascript" src='Openseadragon-speechtextrecognition/speech.js'></script>
+    
+
+
+    <style type="text/css">
+    html {
+        overflow: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div#openseadragon {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        color: white;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div id="openseadragon"></div>
+    <script type="text/javascript">
+        
+        var tileSource = {
+                Image: {
+                    xmlns: "http://schemas.microsoft.com/deepzoom/2008",
+                    Url: "http://openseadragon.github.io/example-images/highsmith/highsmith_files/",
+                    Format: "jpg",
+                    Overlap: "2",
+                    TileSize: "256",
+                    Size: {
+                        Height: "9221",
+                        Width:  "7026"
+                          }
+                      }
+                    };        
+
+        var viewer = OpenSeadragon({
+            // debugMode: true,
+            id: "openseadragon",
+            prefixUrl: "openseadragon/images/",
+            tileSources: tileSource,
+            showNavigator:true
+        });
+        
+        viewer.speechtextrecognition({
+        showOptions: true, // Default is false
+        speechTextLanguage: 'en-En', // Default is en-EN
+        voiceControlLanguage: 'en', // Default is en
+        showSpeechtextRecognitionControl: true // Default is true
+
+        });
+        
+    </script>
+</body>
+</html>
