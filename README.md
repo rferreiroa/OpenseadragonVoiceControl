@@ -1,1 +1,1 @@
-# Openseadragon-Speech-text-and-voice-recognition-plug-in
+# Openseadragon Voice Control Plug-in
