@@ -10,13 +10,15 @@ See index.html included in this repository
 <b>Usage:</b>
 
 Include
-    <script type="text/javascript" src='Openseadragon-speechtextrecognition/openseadragonSpeechtextRecognition.js'></script>
-    <script type="text/javascript" src='Openseadragon-speechtextrecognition/annyang.js'></script>
-    <script type="text/javascript" src='Openseadragon-speechtextrecognition/speech.js'></script>
+
+    openseadragonSpeechtextRecognition.js
+    annyang.js
+    speech.js
 
 after OpenSeadragon in your html. Then after you create a viewer:
 
  var viewer.speechtextrecognition({
+ 
         showOptions: true, // Default is false
         speechTextLanguage: 'en-En', // Default is en-EN
         voiceControlLanguage: 'en', // Default is en
