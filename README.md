@@ -2,12 +2,12 @@
 
 An OpenSeadragon plugin that provides functionality for text recognition and voice commands like zooming, panning and more...
 
-Demo
+<b>Demo</b>
 
 See index.html included in this repository
 
 
-Usage:
+<b>Usage:</b>
 
 Include
     <script type="text/javascript" src='Openseadragon-speechtextrecognition/openseadragonSpeechtextRecognition.js'></script>
@@ -23,6 +23,6 @@ after OpenSeadragon in your html. Then after you create a viewer:
         showSpeechtextRecognitionControl: true // Default is true
  });
 
-Avaliable languages:
+<b>Avaliable languages:</b>
 
 See Languages.md for more details.
