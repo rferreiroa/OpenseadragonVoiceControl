@@ -4,7 +4,7 @@ An OpenSeadragon plugin that provides functionality for text recognition and voi
 
 <b>Demo</b>
 
-See index.html included in this repository
+https://selko.github.io/
 
 
 <b>Usage:</b>
